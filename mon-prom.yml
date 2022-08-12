@@ -20,7 +20,7 @@ spec:
     spec:
       serviceAccountName: prometheus
       nodeSelector:
-        env: <client-id> 
+        env: <clientid> 
         monitor: <nodeLabel>
       priorityClassName: class-monitor
       containers:
