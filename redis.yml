@@ -18,7 +18,7 @@ spec:
         name: <name>
     spec:
       nodeSelector:
-        env: c1
+        env: <client-id>
         db: <nodeLabel>
       priorityClassName: class-storage
       initContainers:

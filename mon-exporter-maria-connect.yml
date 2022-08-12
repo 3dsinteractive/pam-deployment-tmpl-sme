@@ -18,7 +18,7 @@ spec:
         name: prom-maria-connect-exporter
     spec:
       nodeSelector:
-        env: c1
+        env: <client-id>
         role: worker
       priorityClassName: class-monitor
       containers:
