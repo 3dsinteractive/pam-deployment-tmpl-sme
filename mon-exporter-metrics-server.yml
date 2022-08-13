@@ -21,44 +21,44 @@ spec:
         k8s-app: metrics-server-exporter
     spec:
       nodeSelector:
-        env: <clientid>
+        env: <clientId>
         role: worker
       priorityClassName: class-monitor
       serviceAccountName: metrics-server-exporter
       containers:
-      - name: metrics-server-exporter
-        image: 3dsinteractive/metrics-server-exporter:v0.0.7
-        imagePullPolicy: IfNotPresent
-        ports:
-        - containerPort: 8000
-          protocol: TCP
-        livenessProbe:
-          failureThreshold: 3
-          httpGet:
-            path: /metrics
-            port: 8000
-            scheme: HTTP
-          initialDelaySeconds: 30
-          periodSeconds: 10
-          successThreshold: 1
-          timeoutSeconds: 30
-        readinessProbe:
-          failureThreshold: 3
-          httpGet:
-            path: /metrics
-            port: 8000
-            scheme: HTTP
-          initialDelaySeconds: 5
-          periodSeconds: 10
-          successThreshold: 1
-          timeoutSeconds: 10
-        resources:
-          requests:
-            memory: 150Mi
-            cpu: 100m
-          limits:
-            memory: 150Mi
-            cpu: 100m
+        - name: metrics-server-exporter
+          image: 3dsinteractive/metrics-server-exporter:v0.0.7
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+              protocol: TCP
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /metrics
+              port: 8000
+              scheme: HTTP
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 30
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /metrics
+              port: 8000
+              scheme: HTTP
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 10
+          resources:
+            requests:
+              memory: 150Mi
+              cpu: 100m
+            limits:
+              memory: 150Mi
+              cpu: 100m
       restartPolicy: Always
 ---
 apiVersion: v1
@@ -74,8 +74,8 @@ metadata:
   namespace: <namespace>
 spec:
   ports:
-  - port: 9104
-    protocol: TCP
-    targetPort: 8000
+    - port: 9104
+      protocol: TCP
+      targetPort: 8000
   selector:
     k8s-app: metrics-server-exporter

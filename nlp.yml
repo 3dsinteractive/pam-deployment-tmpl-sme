@@ -21,31 +21,31 @@ spec:
         name: <name>
     spec:
       imagePullSecrets:
-      - name: dockerlogin
+        - name: dockerlogin
       nodeSelector:
-        env: <clientid>
+        env: <clientId>
         role: worker
       containers:
-      - name: <name>
-        image: <image>
-        imagePullPolicy: IfNotPresent
-        env:
-        - name: APP_ENV
-          value: production
-        - name: APP_SENTRY_ENDPOINT
-          value: https://875cd4c29f824154af134416b59de8e8@logs.pams.ai/9
-        - name: APP_RELEASE
-          value: staging
-        ports:
-        - name: nlp80
-          containerPort: 80
-        resources:
-          requests:
-            memory: <minMem>
-            cpu: <minCpu>
-          limits:
-            memory: <maxMem>
-            cpu: <maxCpu>
+        - name: <name>
+          image: <image>
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: APP_ENV
+              value: production
+            - name: APP_SENTRY_ENDPOINT
+              value: https://875cd4c29f824154af134416b59de8e8@logs.pams.ai/9
+            - name: APP_RELEASE
+              value: staging
+          ports:
+            - name: nlp80
+              containerPort: 80
+          resources:
+            requests:
+              memory: <minMem>
+              cpu: <minCpu>
+            limits:
+              memory: <maxMem>
+              cpu: <maxCpu>
 ---
 apiVersion: v1
 kind: Service
@@ -56,9 +56,9 @@ metadata:
     name: <name>
 spec:
   ports:
-  - port: 80
-    name: nlp80
-    targetPort: 80
-    protocol: TCP
+    - port: 80
+      name: nlp80
+      targetPort: 80
+      protocol: TCP
   selector:
     name: <name>

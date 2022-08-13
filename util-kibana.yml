@@ -18,39 +18,39 @@ spec:
         name: kibana
     spec:
       nodeSelector:
-        env: <clientid>
+        env: <clientId>
         role: worker
       priorityClassName: class-monitor
       containers:
-      - name: kibana
-        image: 3dsinteractive/kibana:6.8
-        imagePullPolicy: Always
-        env:
-        - name: KIBANA_ELASTICSEARCH_URL
-          value: <kibanaElsUrl>
-        resources:
-          requests:
-            memory: <minMem>
-            cpu: <minCpu>
-          limits:
-            memory: <maxMem>
-            cpu: <maxCpu>
-        livenessProbe:
-          tcpSocket:
-            port: 5601
-          initialDelaySeconds: 60
-          timeoutSeconds: 3
-          periodSeconds: 300
-        readinessProbe:
-          tcpSocket:
-            port: 5601
-          initialDelaySeconds: 5
-          timeoutSeconds: 3
-          periodSeconds: 30
-          failureThreshold: 5
-        ports:
-        - containerPort: 5601
-          name: kibana5601
+        - name: kibana
+          image: 3dsinteractive/kibana:6.8
+          imagePullPolicy: Always
+          env:
+            - name: KIBANA_ELASTICSEARCH_URL
+              value: <kibanaElsUrl>
+          resources:
+            requests:
+              memory: <minMem>
+              cpu: <minCpu>
+            limits:
+              memory: <maxMem>
+              cpu: <maxCpu>
+          livenessProbe:
+            tcpSocket:
+              port: 5601
+            initialDelaySeconds: 60
+            timeoutSeconds: 3
+            periodSeconds: 300
+          readinessProbe:
+            tcpSocket:
+              port: 5601
+            initialDelaySeconds: 5
+            timeoutSeconds: 3
+            periodSeconds: 30
+            failureThreshold: 5
+          ports:
+            - containerPort: 5601
+              name: kibana5601
 ---
 apiVersion: v1
 kind: Service
@@ -61,9 +61,9 @@ metadata:
     name: kibana
 spec:
   ports:
-  - port: 5601
-    name: "kibana5601"
-    targetPort: 5601
-    protocol: TCP
+    - port: 5601
+      name: "kibana5601"
+      targetPort: 5601
+      protocol: TCP
   selector:
     name: kibana

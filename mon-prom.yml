@@ -20,47 +20,47 @@ spec:
     spec:
       serviceAccountName: prometheus
       nodeSelector:
-        env: <clientid> 
+        env: <clientId>
         monitor: <nodeLabel>
       priorityClassName: class-monitor
       containers:
-      - name: <name>
-        image: 3dsinteractive/prometheus:2.0
-        ports:
-        - name: prometheus9090
-          containerPort: 9090
-        resources:
-          requests:
-            memory: 200Mi
-            cpu: 100m
-          limits:
-            memory: 1Gi
-            cpu: 300m
-        livenessProbe:
-          tcpSocket:
-            port: 9090
-          initialDelaySeconds: 30
-          timeoutSeconds: 1
-          periodSeconds: 300
-        readinessProbe:
-          tcpSocket:
-            port: 9090
-          initialDelaySeconds: 30
-          timeoutSeconds: 1
-          periodSeconds: 30
-          failureThreshold: 5
-        volumeMounts:
-        - mountPath: /opt/bitnami/prometheus/conf
-          name: vol-config
-        - mountPath: /etc/alert-rules
-          name: vol-config-alert-rules
+        - name: <name>
+          image: 3dsinteractive/prometheus:2.0
+          ports:
+            - name: prometheus9090
+              containerPort: 9090
+          resources:
+            requests:
+              memory: 200Mi
+              cpu: 100m
+            limits:
+              memory: 1Gi
+              cpu: 300m
+          livenessProbe:
+            tcpSocket:
+              port: 9090
+            initialDelaySeconds: 30
+            timeoutSeconds: 1
+            periodSeconds: 300
+          readinessProbe:
+            tcpSocket:
+              port: 9090
+            initialDelaySeconds: 30
+            timeoutSeconds: 1
+            periodSeconds: 30
+            failureThreshold: 5
+          volumeMounts:
+            - mountPath: /opt/bitnami/prometheus/conf
+              name: vol-config
+            - mountPath: /etc/alert-rules
+              name: vol-config-alert-rules
       volumes:
-      - name: vol-config
-        configMap:
-          name: prom-config
-      - name: vol-config-alert-rules
-        configMap:
-          name: prom-alert-rules
+        - name: vol-config
+          configMap:
+            name: prom-config
+        - name: vol-config-alert-rules
+          configMap:
+            name: prom-alert-rules
 ---
 apiVersion: v1
 kind: Service
@@ -74,7 +74,7 @@ spec:
   selector:
     name: <name>
   ports:
-  - port: 9090
-    name: prometheus9090
-    targetPort: 9090
-    protocol: TCP
+    - port: 9090
+      name: prometheus9090
+      targetPort: 9090
+      protocol: TCP

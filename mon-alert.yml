@@ -19,39 +19,39 @@ spec:
         name: <name>
     spec:
       nodeSelector:
-        env: <clientid>
+        env: <clientId>
         monitor: <nodeLabel>
       priorityClassName: class-monitor
       containers:
-      - name: <name>
-        image: 3dsinteractive/alertmanager:0
-        ports:
-        - name: alert9093
-          containerPort: 9093
-        resources:
-          requests:
-            memory: <minMem>
-            cpu: <minCpu>
-          limits:
-            memory: <maxMem>
-            cpu: <maxCpu>
-        livenessProbe:
-          httpGet:
-            path: /#/status
-            port: 9093
-          initialDelaySeconds: 30
-          timeoutSeconds: 30
-          failureThreshold: 5
-        readinessProbe:
-          httpGet:
-            path: /#/status
-            port: 9093
-          initialDelaySeconds: 30
-          timeoutSeconds: 30
-          failureThreshold: 10
-        volumeMounts:
-          - name: config-vol
-            mountPath: /opt/bitnami/alertmanager/conf
+        - name: <name>
+          image: 3dsinteractive/alertmanager:0
+          ports:
+            - name: alert9093
+              containerPort: 9093
+          resources:
+            requests:
+              memory: <minMem>
+              cpu: <minCpu>
+            limits:
+              memory: <maxMem>
+              cpu: <maxCpu>
+          livenessProbe:
+            httpGet:
+              path: /#/status
+              port: 9093
+            initialDelaySeconds: 30
+            timeoutSeconds: 30
+            failureThreshold: 5
+          readinessProbe:
+            httpGet:
+              path: /#/status
+              port: 9093
+            initialDelaySeconds: 30
+            timeoutSeconds: 30
+            failureThreshold: 10
+          volumeMounts:
+            - name: config-vol
+              mountPath: /opt/bitnami/alertmanager/conf
       volumes:
         - name: config-vol
           configMap:
@@ -69,8 +69,8 @@ spec:
   selector:
     name: <name>
   ports:
-  - port: 9093
-    name: alert9093
-    targetPort: 9093
-    protocol: TCP
+    - port: 9093
+      name: alert9093
+      targetPort: 9093
+      protocol: TCP
   clusterIP: None

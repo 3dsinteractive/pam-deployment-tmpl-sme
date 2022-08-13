@@ -21,59 +21,59 @@ spec:
         name: <name>
     spec:
       imagePullSecrets:
-      - name: dockerlogin
+        - name: dockerlogin
       affinity:
         podAntiAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 1
-            podAffinityTerm:
-              labelSelector:
-                matchExpressions:
-                - key: env
-                  operator: In
-                  values:
-                  - <clientid>
-              topologyKey: kubernetes.io/hostname
+            - weight: 1
+              podAffinityTerm:
+                labelSelector:
+                  matchExpressions:
+                    - key: env
+                      operator: In
+                      values:
+                        - <clientId>
+                topologyKey: kubernetes.io/hostname
       nodeSelector:
-        env: <clientid>
+        env: <clientId>
         role: worker
       priorityClassName: class-static
       containers:
-      - name: <name>
-        image: <image>
-        imagePullPolicy: IfNotPresent
-        readinessProbe:
-          tcpSocket:
-            port: 8000
-          initialDelaySeconds: 10
-          periodSeconds: 10
-          timeoutSeconds: 3
-          failureThreshold: 3
-        livenessProbe:
-          tcpSocket:
-            port: 8000
-          initialDelaySeconds: 60
-          periodSeconds: 30
-          timeoutSeconds: 30
-          failureThreshold: 10
-        ports:
-        - name: cmsx8000
-          containerPort: 8000
-        resources:
-          requests:
-            memory: <minMem>
-            cpu: <minCpu>
-          limits:
-            memory: <maxMem>
-            cpu: <maxCpu>
-        volumeMounts:
-        - name: vol-vhost-config
-          mountPath: /opt/bitnami/nginx/conf/vhosts/my_vhost.conf
-          subPath: vhost.conf
+        - name: <name>
+          image: <image>
+          imagePullPolicy: IfNotPresent
+          readinessProbe:
+            tcpSocket:
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+          livenessProbe:
+            tcpSocket:
+              port: 8000
+            initialDelaySeconds: 60
+            periodSeconds: 30
+            timeoutSeconds: 30
+            failureThreshold: 10
+          ports:
+            - name: cmsx8000
+              containerPort: 8000
+          resources:
+            requests:
+              memory: <minMem>
+              cpu: <minCpu>
+            limits:
+              memory: <maxMem>
+              cpu: <maxCpu>
+          volumeMounts:
+            - name: vol-vhost-config
+              mountPath: /opt/bitnami/nginx/conf/vhosts/my_vhost.conf
+              subPath: vhost.conf
       volumes:
-      - name: vol-vhost-config
-        configMap:
-          name: cms-front-vhost
+        - name: vol-vhost-config
+          configMap:
+            name: cms-front-vhost
 ---
 apiVersion: v1
 kind: Service
@@ -84,9 +84,9 @@ metadata:
     name: <name>
 spec:
   ports:
-  - port: 80
-    name: cmsx80
-    targetPort: 8000
-    protocol: TCP
+    - port: 80
+      name: cmsx80
+      targetPort: 8000
+      protocol: TCP
   selector:
     name: <name>

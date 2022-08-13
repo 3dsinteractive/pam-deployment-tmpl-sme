@@ -18,18 +18,18 @@ spec:
         name: <name>
     spec:
       nodeSelector:
-        env: <clientid>
+        env: <clientId>
         db: <nodeLabel>
       priorityClassName: class-storage
       initContainers:
         - name: init-sysctl
           image: busybox
           command:
-          - /bin/sh
-          - -c
-          - |
-            sysctl -w net.core.somaxconn=65535
-            sysctl -w vm.overcommit_memory=1
+            - /bin/sh
+            - -c
+            - |
+              sysctl -w net.core.somaxconn=65535
+              sysctl -w vm.overcommit_memory=1
           securityContext:
             privileged: true
         - name: disable-thp
@@ -37,7 +37,12 @@ spec:
           volumeMounts:
             - name: host-sys
               mountPath: /host-sys
-          command: ["/bin/sh", "-c", "echo never > /host-sys/kernel/mm/transparent_hugepage/enabled"]
+          command:
+            [
+              "/bin/sh",
+              "-c",
+              "echo never > /host-sys/kernel/mm/transparent_hugepage/enabled",
+            ]
         - name: init-dir
           image: busybox
           volumeMounts:
@@ -75,15 +80,15 @@ spec:
             periodSeconds: 30
             failureThreshold: 5
           volumeMounts:
-          - mountPath: /bitnami/<name>/data
-            name: vol-data
+            - mountPath: /bitnami/<name>/data
+              name: vol-data
       volumes:
-      - name: vol-data
-        persistentVolumeClaim:
-          claimName: pvc-<name>
-      - name: host-sys
-        hostPath:
-          path: /sys
+        - name: vol-data
+          persistentVolumeClaim:
+            claimName: pvc-<name>
+        - name: host-sys
+          hostPath:
+            path: /sys
 ---
 apiVersion: v1
 kind: Service
@@ -96,8 +101,8 @@ spec:
   selector:
     name: <name>
   ports:
-  - port: 6379
-    name: redis6379
-    targetPort: 6379
-    protocol: TCP
+    - port: 6379
+      name: redis6379
+      targetPort: 6379
+      protocol: TCP
   clusterIP: None
