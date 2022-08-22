@@ -17,6 +17,8 @@ spec:
       imagePullSecrets:
       - name: dockerlogin
       priorityClassName: class-monitor
+      nodeSelector:
+        env: <clientId>
       containers:
       - name: node-daemon
         image: <image>
