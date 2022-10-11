@@ -47,8 +47,8 @@ spec:
           image: busybox
           volumeMounts:
             - name: vol-data
-              mountPath: /pam/<namespace>/<name>/data
-          command: ["/bin/sh", "-c", "chown 1001 /pam/<namespace>/<name>/data"]
+              mountPath: /var/lib/docker/pam/<namespace>/<name>/data
+          command: ["/bin/sh", "-c", "chown 1001 /var/lib/docker/pam/<namespace>/<name>/data"]
       containers:
         - name: <name>
           image: 3dsinteractive/redis:5.0-custom
