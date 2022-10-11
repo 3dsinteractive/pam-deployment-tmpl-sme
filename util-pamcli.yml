@@ -25,7 +25,7 @@ spec:
       priorityClassName: class-monitor
       containers:
         - name: <name>
-          image: 3dsinteractive/pamcli-sme:<timestamp>
+          image: 3dsinteractive/pamcli:<timestamp>
           stdin: true
           tty: true
           imagePullPolicy: Always
