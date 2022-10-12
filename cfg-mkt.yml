@@ -13,10 +13,10 @@ configs:
 - { name: "PAM_AI_API_APPID", alias: "PAM4_AI_API_APPID", type: "s", required: true, sample: "[UUID]" }
 - { name: "PAM_AI_API_SECRET", alias: "PAM4_AI_API_SECRET", type: "s", required: true, sample: "[UUID]" }
 - { name: "PAM_AI_API_TIMEOUT", alias: "PAM4_AI_API_TIMEOUT", type: "n", required: true, sample: "5" }
-- { name: "PAM_TRACKERRECEIVEDCONSUME_BATCHSIZE", alias: "PAM4_TRACKERRECEIVEDCONSUME_BATCHSIZE", type: "n", required: true, sample: "500", default: 500 }
-- { name: "PAM_TRACKERRECEIVEDCONSUME_BATCHTIMEOUT", alias: "PAM4_TRACKERRECEIVEDCONSUME_BATCHTIMEOUT", type: "n", required: true, sample: "1500", default: 3000 }
-- { name: "PAM_EVALTRIGGERCOMMANDS_BATCHSIZE", alias: "PAM4_EVALTRIGGERCOMMANDS_BATCHSIZE", type: "n", required: true, sample: "500", default: 500 }
-- { name: "PAM_EVALTRIGGERCOMMANDS_TIMEOUT", alias: "PAM4_EVALTRIGGERCOMMANDS_TIMEOUT", type: "n", required: true, sample: "1500", default: 3000 }
+- { name: "PAM_TRACKERRECEIVEDCONSUME_BATCHSIZE", alias: "PAM4_TRACKERRECEIVEDCONSUME_BATCHSIZE", type: "n", required: false, sample: "500", default: 500 }
+- { name: "PAM_TRACKERRECEIVEDCONSUME_BATCHTIMEOUT", alias: "PAM4_TRACKERRECEIVEDCONSUME_BATCHTIMEOUT", type: "n", required: false, sample: "1500", default: 3000 }
+- { name: "PAM_EVALTRIGGERCOMMANDS_BATCHSIZE", alias: "PAM4_EVALTRIGGERCOMMANDS_BATCHSIZE", type: "n", required: false, sample: "500", default: 500 }
+- { name: "PAM_EVALTRIGGERCOMMANDS_TIMEOUT", alias: "PAM4_EVALTRIGGERCOMMANDS_TIMEOUT", type: "n", required: false, sample: "1500", default: 3000 }
 - { name: "PAM_CONTACTIMPORTCOMMANDS_BATCHSIZE", alias: "PAM4_CONTACTIMPORTCOMMANDS_BATCHSIZE", type: "n", required: false, sample: "500", default: 500 }
 - { name: "PAM_CONTACTIMPORTCOMMANDS_TIMEOUT", alias: "PAM4_CONTACTIMPORTCOMMANDS_TIMEOUT", type: "n", required: false, sample: "1500", default: 3000 }
 - { name: "PAM_CACHE_EXPIRE_TIME_CONTACTATTRS", alias: "PAM4_CACHE_EXPIRE_TIME_CONTACTATTRS", type: "n", required: true, sample: "10", default: 10 }
@@ -82,11 +82,13 @@ configs:
 - { name: "PAM_TRACKER_CREATED_CONSUMER_SIZE_FACTOR", alias: "PAM_TRACKER_CREATED_CONSUMER_SIZE_FACTOR", type: "n", required: false, sample: 10, default: 10 }
 - { name: "PAM_IS_ENABLE_SMS_PROVIDER_BY_EXTERNAL_API", alias: "PAM4_IS_ENABLE_SMS_PROVIDER_BY_EXTERNAL_API", type: "b", required: false, sample: "false", default: false }
 - { name: "PAM_SEEDER_COD", alias: "PAM4_SEEDER_COD", type: "b", required: false, sample: true, default: true }
-- { name: "PAM_ENABLE_SECURITY_EXPORT_FILE", alias: "PAM_ENABLE_SECURITY_EXPORT_FILE", type: "b", required: false, sample: true, default: false }
 - { name: "PAM_TRACKER_EVENT_INDEXD_NAMES", type: "s", required: false, sample: "" }
 - { name: "PAM_TRACKER_EVENT_SET_LINKED_CONTACT_SYNONYMS", type: "s", required: false, sample: "set_linked_contact" }
 - { name: "PAM_TRACKER_EVENT_FIND_LINKED_CONTACT_SYNONYMS", type: "s", required: false, sample: "login,page_viewed,member_registered" }
+- { name: "PAM_APP_PUSH_NOTIFICATION_DISPLAY_DURATION_IN_DAY", type: "n", required: false, sample: 30, default: 30 }
 - { name: "PAM_TRACKER_EVENT_NON_INDEX_FORM_FIELD_INDEXD_NAMES", type: "s", required: false, sample: "trackers_update_attribute" }
 - { name: "PAM_TRACKER_EVENT_EVAL_SEGMENT_INDEXD_NAMES", type: "s", required: false, sample: "trackers_page_view,trackers_chat,trackers" }
 - { name: "PAM_HAS_MIGRATE_CONTACT_DELIVERS_APP_PUSH", type: "b", required: false, sample: true, default: false }
+- { name: "PAM_SENDER_PTASK_PROGRESS_UPDATE_THRESHOLD", type: "n", required: false, sample: 1000, default: 1000 }
+- { name: "PAM_WEB_DROP_LEAD_EMAIL", type: "s", required: false, sample: "contact@3dsinteractive.com" }
 - { name: "PAM_EVAL_CONTAINER_IDLE_DURATION", type: "n", required: false, sample: 10, default: 10 }
