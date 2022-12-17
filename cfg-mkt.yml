@@ -92,3 +92,6 @@ configs:
 - { name: "PAM_SENDER_PTASK_PROGRESS_UPDATE_THRESHOLD", type: "n", required: false, sample: 1000, default: 1000 }
 - { name: "PAM_WEB_DROP_LEAD_EMAIL", type: "s", required: false, sample: "contact@3dsinteractive.com" }
 - { name: "PAM_EVAL_CONTAINER_IDLE_DURATION", type: "n", required: false, sample: 10, default: 10 }
+- { name: "PAM_SCHEDULER_RUN_DATA_ADAPTER", type: "n", required: false, sample: 1800, default: 1800 }
+- { name: "PAM_SCHEDULER_RUN_UPDATE_COUNTER_STAT", type: "n", required: false, sample: 300, default: 300 }
+- { name: "PAM_SCHEDULER_RUN_READ_TRACKER_FILE", type: "n", required: false, sample: 600, default: 600 }
