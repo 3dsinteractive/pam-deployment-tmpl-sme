@@ -130,3 +130,4 @@ configs:
 - { name: "ECOM_DROP_LEAD_VOUCHER_SMS_CAMPAIGN_ID", type: "s", required: false, sample: "", default: ""}
 - { name: "ECOM_DROP_LEAD_VOUCHER_EMAIL_CAMPAIGN_ID", type: "s", required: false, sample: "", default: ""}
 - { name: "ECOM_OTP_VALIDATE_EXIST_MEMBER", type: "b", required: false, sample: false, default: false}
+- { name: "ECOM_ENABLE_VALIDATE_PASSWORD_SPECIAL_CHAR", type: "b", required: false, sample: false, default: false}
