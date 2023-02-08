@@ -9,6 +9,7 @@ attrs:
   - { name: "maxCpu", alias: "maxCpu", doublequote: false, replace: true }
   - { name: "nodeLabel", alias: "nodeLabel", doublequote: false, replace: true }
   - { name: "kfkId", alias: "kfkId", doublequote: false, replace: true }
+  - { name: "elsId", alias: "elsId", doublequote: false, replace: true }  
   - { name: "password", alias: "password", doublequote: false, replace: true }
   - {
       name: "datasource",
