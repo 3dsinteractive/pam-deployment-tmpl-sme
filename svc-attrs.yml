@@ -8,6 +8,7 @@ attrs:
   - { name: "minCpu", alias: "minCpu", doublequote: false, replace: true }
   - { name: "maxCpu", alias: "maxCpu", doublequote: false, replace: true }
   - { name: "nodeLabel", alias: "nodeLabel", doublequote: false, replace: true }
+  - { name: "kfkId", alias: "kfkId", doublequote: false, replace: true }
   - { name: "password", alias: "password", doublequote: false, replace: true }
   - {
       name: "datasource",
