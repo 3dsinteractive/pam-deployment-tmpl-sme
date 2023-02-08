@@ -20,6 +20,7 @@ spec:
       nodeSelector:
         env: <clientId>
         db: <nodeLabel>
+        kfk: <kfkID>
       priorityClassName: class-storage
       initContainers:
         - name: init-dir
