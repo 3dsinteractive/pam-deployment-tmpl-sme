@@ -8,11 +8,6 @@ attrs:
   - { name: "minCpu", alias: "minCpu", doublequote: false, replace: true }
   - { name: "maxCpu", alias: "maxCpu", doublequote: false, replace: true }
   - { name: "nodeLabel", alias: "nodeLabel", doublequote: false, replace: true }
-<<<<<<< HEAD
-=======
-  - { name: "kfkId", alias: "kfkId", doublequote: false, replace: true }
-  - { name: "elsId", alias: "elsId", doublequote: false, replace: true }
->>>>>>> 5567d99b25c09bffec59798911351eac6b4e7c8d
   - { name: "password", alias: "password", doublequote: false, replace: true }
   - {
       name: "datasource",
