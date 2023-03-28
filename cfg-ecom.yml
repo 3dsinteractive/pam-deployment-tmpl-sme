@@ -134,3 +134,8 @@ configs:
 - { name: "ECOM_ENABLE_ORDER_STORE_PERMISSION", type: "b", required: false, sample: false, default: false}
 - { name: "ENABLE_INSERT_OR_UPDATE_MEMBER_EXTERNAL", type: "b", required: false, sample: false, default: false}
 - { name: "ECOM_ENABLE_VALIDATE_PASSWORD_SPECIAL_CHAR", type: "b", required: false, sample: false, default: false}
+- { name: "ECOM_RELATED_PRODUCT_SAME_GROUP", type: "b", required: false, sample: true, default: true}
+- { name: "ECOM_RELATED_PRODUCT_MORE", type: "b", required: false, sample: false, default: false}
+- { name: "ECOM_RELATED_PRODUCT_TYPE", type: "s", required: false, sample: "brand", default: ""}
+- { name: "ECOM_RELATED_PRODUCT_DISPLAY_LIMIT", type: "n", required: false, sample: 10, default: 10}
+- { name: "THIRD_PARTY_GET_MEMBER_KEY", type: "s", required: false, sample: "member_card", default: "member_card"}
