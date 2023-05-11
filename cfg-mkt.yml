@@ -101,3 +101,14 @@ configs:
 - { name: "PAM_ENABLE_DAILY_REFRESH_V2", type: "b", required: false, sample: true, default: false }
 - { name: "PAM_TRACKER_MONTHS_LIMIT", type: "n", required: false, sample: 12, default: 12 }
 - { name: "PAM_ENABLE_ADAPTER_REALTIME", type: "b", required: false, sample: true, default: false }
+- { name: "PAM_ENABLE_UPDATE_TRACKER", type: "b", required: false, sample: true, default: false }
+- { name: "PAM_ENABLE_EVENT_PARAMETERS_FILTER", type: "b", required: false, sample: true, default: false }
+- { name: "PAM_ENABLE_RATE_LIMIT_BY_IP", type: "b", required: false, sample: true, default: false }
+- { name: "PAM_WHITELIST_IP_FOR_RATE_LIMITS", type: "s", required: false, sample: "10.10.10.10,20.20.20.20", default: "" }
+- { name: "PAM_EVENT_PARAMETER_MAX_LEN", type: "n", required: false, sample: 200, default: 200 }
+- { name: "PAM_EVENT_NAME_MAX_LEN", type: "n", required: false, sample: 50, default: 50 }
+- { name: "PAM_DEFAULT_MQ_PARTITIONS", type: "s", required: false, sample: "50", default: "50" }
+- { name: "PAM_TRACKING_WITHOUT_CONSENT_EVENTS", type: "s", required: false, sample: "event1,event2,event3", default: "" }
+- { name: "PAM_SQL_QUERY_BATCHSIZE", type: "n", required: false, sample: 10000, default: 10000 }
+- { name: "PAM_EXIT_WHEN_MIGRATE_FINISH", type: "b", required: false, sample: false, default: false }
+- { name: "PAM_EVALUATE_CONTACT_TRIGGERS_PARTITIONS", type: "n", required: false, sample: 100, default: 100 }
