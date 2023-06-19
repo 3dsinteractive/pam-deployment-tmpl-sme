@@ -47,6 +47,7 @@ attrs:
       replace: true,
     }
   - { name: "clientId", alias: "clientId", doublequote: false, replace: true }
+  - { name: "maxMemory", alias: "maxMemory", doublequote: true, replace: true}
   # Use in els
   - {
       name: "minimumMasterNode",
