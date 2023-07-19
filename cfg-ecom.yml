@@ -162,3 +162,5 @@ configs:
 - { name: "ECOM_THIRD_PARTY_PERSISTER_PASSWORD", type: "s", required: false, sample: "UUID" }
 - { name: "ECOM_THIRD_PARTY_PERSISTER_CHARSET", type: "s", required: false, sample: utf8mb4 }
 - { name: "ECOM_ENABLE_UPDATE_STOCK_EXTERNAL", type: "b", required: false, sample: false, default: false}
+- { name: "PAM_DATA_ADAPTER_CAMPAIGN_INSIGHT_ENDED_AT_OFFSET", type: "n", required: false, sample: -3, default: -3 }
+- { name: "PAM_DATA_ADAPTER_CAMPAIGN_INSIGHT_DATE_RANGE_FOR_EXPORT_LIMIT", type: "n", required: false, sample: -3, default: -3 }
