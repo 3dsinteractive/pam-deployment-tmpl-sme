@@ -164,3 +164,4 @@ configs:
 - { name: "ECOM_ENABLE_UPDATE_STOCK_EXTERNAL", type: "b", required: false, sample: false, default: false}
 - { name: "PAM_DATA_ADAPTER_CAMPAIGN_INSIGHT_ENDED_AT_OFFSET", type: "n", required: false, sample: -3, default: -3 }
 - { name: "PAM_DATA_ADAPTER_CAMPAIGN_INSIGHT_DATE_RANGE_FOR_EXPORT_LIMIT", type: "n", required: false, sample: -3, default: -3 }
+- { name: "ECOM_ATTEMPT_REPEAT_CALL_API", type: "n", required: false, sample: 3, default: 1}
