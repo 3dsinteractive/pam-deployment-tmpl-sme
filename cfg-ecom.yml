@@ -165,3 +165,5 @@ configs:
 - { name: "PAM_DATA_ADAPTER_CAMPAIGN_INSIGHT_ENDED_AT_OFFSET", type: "n", required: false, sample: -3, default: -3 }
 - { name: "PAM_DATA_ADAPTER_CAMPAIGN_INSIGHT_DATE_RANGE_FOR_EXPORT_LIMIT", type: "n", required: false, sample: -3, default: -3 }
 - { name: "ECOM_ATTEMPT_REPEAT_CALL_API", type: "n", required: false, sample: 3, default: 1}
+- { name: "ECOM_IGNORE_GET_PROVICE_FOR_GEN_PERMISSION", type: "b", required: false, sample: false, default: false}
+- { name: "ECOM_IGNORE_GET_TRACKING_NUMBER_FOR_CREATE_UPDATE_STORE", type: "b", required: false, sample: false, default: false}
