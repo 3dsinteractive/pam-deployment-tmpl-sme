@@ -137,6 +137,7 @@ configs:
 - { name: "ECOM_ENABLE_ORDER_STORE_PERMISSION", type: "b", required: false, sample: false, default: false}
 - { name: "ENABLE_INSERT_OR_UPDATE_MEMBER_EXTERNAL", type: "b", required: false, sample: false, default: false}
 - { name: "ECOM_ENABLE_VALIDATE_PASSWORD_SPECIAL_CHAR", type: "b", required: false, sample: false, default: false}
+- { name: "ECOM_ENABLE_LOGIN_WITH_CONTACT_EMAIL", type: "b", required: false, sample: false, default: false}
 - { name: "ECOM_RELATED_PRODUCT_SAME_GROUP", type: "b", required: false, sample: true, default: true}
 - { name: "ECOM_RELATED_PRODUCT_MORE", type: "b", required: false, sample: false, default: false}
 - { name: "ECOM_RELATED_PRODUCT_TYPE", type: "s", required: false, sample: "brand", default: ""}
@@ -162,10 +163,9 @@ configs:
 - { name: "ECOM_THIRD_PARTY_PERSISTER_PASSWORD", type: "s", required: false, sample: "UUID" }
 - { name: "ECOM_THIRD_PARTY_PERSISTER_CHARSET", type: "s", required: false, sample: utf8mb4 }
 - { name: "ECOM_ENABLE_UPDATE_STOCK_EXTERNAL", type: "b", required: false, sample: false, default: false}
-- { name: "PAM_DATA_ADAPTER_CAMPAIGN_INSIGHT_ENDED_AT_OFFSET", type: "n", required: false, sample: -3, default: -3 }
-- { name: "PAM_DATA_ADAPTER_CAMPAIGN_INSIGHT_DATE_RANGE_FOR_EXPORT_LIMIT", type: "n", required: false, sample: -3, default: -3 }
 - { name: "ECOM_ATTEMPT_REPEAT_CALL_API", type: "n", required: false, sample: 3, default: 1}
 - { name: "ECOM_IGNORE_GET_PROVICE_FOR_GEN_PERMISSION", type: "b", required: false, sample: false, default: false}
 - { name: "ECOM_IGNORE_GET_TRACKING_NUMBER_FOR_CREATE_UPDATE_STORE", type: "b", required: false, sample: false, default: false}
+- { name: "ECOM_ENABLE_POSPORTAL_STORE_PERMISSION", type: "b", required: false, sample: false, default: false}
 - { name: "ECOM_PERMISSION_ORDER_KEY_PREFIX", type: "s", required: false, sample: ecom-orders, default: "" }
 - { name: "ECOM_PERMISSION_STORE_KEY_PREFIX", type: "s", required: false, sample: ecom-stores, default: "" }
