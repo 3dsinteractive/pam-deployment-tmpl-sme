@@ -134,3 +134,4 @@ configs:
 - { name: "PAM_DATAFLOW_COMPLETED_CONSUMER_SIZE_FACTOR", type: "n", required: false, sample: "3", default: 3 }
 - { name: "PAM_TOPIC_DATAFLOW_COMPLETED_PARTITIONS", type: "n", required: false, sample: "3", default: 3 }
 - { name: "PAM_TOPIC_DATAFLOW_COMPLETED_REPLICAS", type: "n", required: false, sample: "3", default: 3 }
+- { name: "PAM4_SCHEDULER_SEGMENT_REFRESH_NIGHT_HOUR", type: "n", required: false, sample: 19, default: 19 }
