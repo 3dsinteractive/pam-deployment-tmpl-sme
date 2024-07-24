@@ -150,3 +150,9 @@ configs:
 - { name: "PAM_AZURE_AD_PATH_URL", type: "s", required: false, sample: "", default: "" }
 - { name: "PAM_AZURE_AD_PARAM_NAME_APP_ID", type: "s", required: false, sample: "", default: "" }
 - { name: "PAM_AZURE_AD_GROUP_NAME", type: "s", required: false, sample: "", default: "" }
+- { name: "PAM_CLUSTER_OVERLOAD_NETWORK_USAGE_THRESHOLD_MBPS", type: "n", required: false, sample: 1000, default: 1000 }
+- { name: "PAM_MAILER_POOLSIZE", type: "n", required: false, sample: 3, default: 3 }
+- { name: "PAM_MAILER_POOLSIZE_SENDER", type: "n", required: false, sample: 5, default: 5 }
+- { name: "PAM_RATELIMIT_LOCAL_CPU_LOW_PRIORITY", type: "s", required: false, sample: "1.8", default: "1.8" }
+- { name: "PAM_RATELIMIT_LOCAL_CPU", type: "s", required: false, sample: "2.0", default: "2.0" }
+- { name: "PAM_RATELIMIT_LOCAL_CPU_HIGH_PRIORITY", type: "s", required: false, sample: "2.5", default: "2.5" }
