@@ -26,8 +26,8 @@ spec:
           image: busybox
           volumeMounts:
             - name: vol-data
-              mountPath: /var/lib/docker/pam/<namespace>/<name>/data
-          command: ["/bin/sh", "-c", "chown 1001 /var/lib/docker/pam/<namespace>/<name>/data"]
+              mountPath: /var/lib/containerd/pam/<namespace>/<name>/data
+          command: ["/bin/sh", "-c", "chown 1001 /var/lib/containerd/pam/<namespace>/<name>/data"]
           imagePullPolicy: IfNotPresent
           securityContext:
             privileged: true
