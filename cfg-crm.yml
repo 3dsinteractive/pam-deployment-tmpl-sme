@@ -137,27 +137,27 @@ configs:
 # - { name: "CRM_THIRD_PARTY_PERSISTER_DB", type: "s", required: false, sample: my_database }
 # - { name: "CRM_THIRD_PARTY_PERSISTER_USERNAME", type: "s", required: false, sample: my_user }
 # - { name: "CRM_THIRD_PARTY_PERSISTER_PASSWORD", type: "s", required: false, sample: "UUID" }
-# - { name: "CRM_THIRD_PARTY_PERSISTER_CHARSET", type: "s", required: false, sample: utf8mb4 }
-# - { name: "CRM_ENABLE_UPDATE_STOCK_EXTERNAL", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ATTEMPT_REPEAT_CALL_API", type: "n", required: false, sample: 3, default: 1}
-# - { name: "CRM_IGNORE_GET_PROVICE_FOR_GEN_PERMISSION", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_IGNORE_GET_TRACKING_NUMBER_FOR_CREATE_UPDATE_STORE", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ENABLE_POSPORTAL_STORE_PERMISSION", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_PERMISSION_ORDER_KEY_PREFIX", type: "s", required: false, sample: ecom-orders, default: "" }
-# - { name: "CRM_PERMISSION_STORE_KEY_PREFIX", type: "s", required: false, sample: ecom-stores, default: "" }
-# - { name: "CRM_ENABLE_PROMOTION_SKU_IMPORT", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_MQ_VOUCHER_PARTITIONS", type: "n", required: false, sample: "50" }
-# - { name: "CRM_MQ_VOUCHER_REPLICAS", type: "n", required: false, sample: "2" }
-# - { name: "CRM_VOUCHER_BARCODE_SHARDS", type: "n", required: false, sample: "1" }
-# - { name: "CRM_IGNORE_AGGR_REMAINING_VOUCHER_FOR_LIST_VOUCHERS", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ENABLE_AGGR_REMAINING_STORE_STOCK_VOUCHER_FOR_LIST_VOUCHERS", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ENABLE_AGGR_REMAINING_STORE_STOCK_FOR_DETAIL_VOUCHER", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_IGNORE_GENERATE_PICKUP_TIME_FOR_STORE", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_SEND_QUESTIONNAIRE_TO_DEMOGRAPHIC_ATTRIBUTES", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_MQ_RMD_PARTITIONS", type: "n", required: false, sample: "50" }
-# - { name: "CRM_MQ_RMD_REPLICAS", type: "n", required: false, sample: "2" }
-# - { name: "CRM_ENABLE_SHARING_VOUCHER_BARCODE_INDEX", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_SHARING_VOUCHER_BARCODE_INDEX_LIMIT", type: "n", required: false, sample: "10" }
-# - { name: "CRM_ENABLE_MULTIPLE_LINE_PROVIDER", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_LINE_CHANNEL_ACCESS_TOKEN", type: "s", required: false, sample: "", default: ""}
-# - { name: "CRM_ENABLE_MEMBER_TIER_UPGRADE", type: "b", required: false, sample: false, default: true}
+- { name: "CRM_THIRD_PARTY_PERSISTER_CHARSET", type: "s", required: false, sample: utf8mb4 }
+- { name: "CRM_ENABLE_UPDATE_STOCK_EXTERNAL", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ATTEMPT_REPEAT_CALL_API", type: "n", required: false, sample: 3, default: 1}
+- { name: "CRM_IGNORE_GET_PROVICE_FOR_GEN_PERMISSION", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_IGNORE_GET_TRACKING_NUMBER_FOR_CREATE_UPDATE_STORE", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ENABLE_POSPORTAL_STORE_PERMISSION", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_PERMISSION_ORDER_KEY_PREFIX", type: "s", required: false, sample: ecom-orders, default: "" }
+- { name: "CRM_PERMISSION_STORE_KEY_PREFIX", type: "s", required: false, sample: ecom-stores, default: "" }
+- { name: "CRM_ENABLE_PROMOTION_SKU_IMPORT", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_MQ_VOUCHER_PARTITIONS", type: "n", required: false, sample: "50" }
+- { name: "CRM_MQ_VOUCHER_REPLICAS", type: "n", required: false, sample: "2" }
+- { name: "CRM_VOUCHER_BARCODE_SHARDS", type: "n", required: false, sample: "1" }
+- { name: "CRM_IGNORE_AGGR_REMAINING_VOUCHER_FOR_LIST_VOUCHERS", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ENABLE_AGGR_REMAINING_STORE_STOCK_VOUCHER_FOR_LIST_VOUCHERS", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ENABLE_AGGR_REMAINING_STORE_STOCK_FOR_DETAIL_VOUCHER", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_IGNORE_GENERATE_PICKUP_TIME_FOR_STORE", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_SEND_QUESTIONNAIRE_TO_DEMOGRAPHIC_ATTRIBUTES", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_MQ_RMD_PARTITIONS", type: "n", required: false, sample: "50" }
+- { name: "CRM_MQ_RMD_REPLICAS", type: "n", required: false, sample: "2" }
+- { name: "CRM_ENABLE_SHARING_VOUCHER_BARCODE_INDEX", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_SHARING_VOUCHER_BARCODE_INDEX_LIMIT", type: "n", required: false, sample: "10" }
+- { name: "CRM_ENABLE_MULTIPLE_LINE_PROVIDER", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_LINE_CHANNEL_ACCESS_TOKEN", type: "s", required: false, sample: "", default: ""}
+- { name: "CRM_ENABLE_MEMBER_TIER_UPGRADE", type: "b", required: false, sample: false, default: true}
