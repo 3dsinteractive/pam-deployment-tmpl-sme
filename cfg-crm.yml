@@ -1,6 +1,5 @@
 version: v1
 configs:
-#- { name: "CRM_HOST", type: "s", required: true, sample: https://stg-ecom.pams.ai, default: "[REPLACE_ECOM_HOST]" }
 - { name: "CRM_PAYMENT_EGHL_SERVICE_ID", type: "s", required: true, sample: "[SERVICE_ID]" }
 - { name: "CRM_PAYMENT_EGHL_PAYMENT_URL", type: "s", required: true, sample: "https://test2pay.ghl.com/ipgsg/payment.aspx", default: https://test2pay.ghl.com/ipgsg/payment.aspx }
 - { name: "CRM_PAYMENT_EGHL_PASSWORD", type: "s", required: true, sample: "[UUID]" }
@@ -92,7 +91,6 @@ configs:
 - { name: "CRM_ENABLE_VALIDATE_SALE_CHANNEL", type: "b", required: false, sample: false, default: false}
 - { name: "CRM_INDEX_CREATE_ALIAS_X_MONTH_FROM_NOW", type: "n", required: false, sample: "", default: 24}
 - { name: "CRM_INDEX_CLOSE_INDEXES_AFTER_X_MONTH_FROM_NOW", type: "n", required: false, sample: "", default: 25}
-#- { name: "CRM_FRONT_HOST", type: "s", required: false, sample: "", default: ""}
 - { name: "CRM_ENABLE_VALIDATE_PASSWORD_FORMAT", type: "b", required: false, sample: false, default: false}
 - { name: "CRM_PAYMENT_KBANK_FULL_PAYMENT_TERMINAL_ID", type: "s", required: false, sample: "", default: ""}
 - { name: "CRM_PAYMENT_KBANK_IPP_TERMINAL_ID", type: "s", required: false, sample: "", default: ""}
@@ -161,11 +159,5 @@ configs:
 - { name: "CRM_ENABLE_SHARING_VOUCHER_BARCODE_INDEX", type: "b", required: false, sample: false, default: false}
 - { name: "CRM_SHARING_VOUCHER_BARCODE_INDEX_LIMIT", type: "n", required: false, sample: "10" }
 - { name: "CRM_ENABLE_MULTIPLE_LINE_PROVIDER", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_FRONT_HOST", type: "s", required: false, sample: "https://stgx-crm.pams.ai", default: ""}
-# - { name: "CRM_HOST", type: "s", required: false, sample: "https://stgx-crm-api.pams.ai", default: ""}
 - { name: "CRM_LINE_CHANNEL_ACCESS_TOKEN", type: "s", required: false, sample: "", default: ""}
-#- { name: "CRM_PRODUCT_SCAN_LANDING_PAGE_ID", type: "s", required: false, sample: "", default: ""}
-# - { name: "CRM_ENABLE_CONTENT_READ", type: "b", required: false, sample: true, default: false}
-# - { name: "CRM_RESOLVE_AFFILIATE_KEY_NAME", type: "s", required: false, sample: "", default: ""}
 - { name: "CRM_ENABLE_MEMBER_TIER_UPGRADE", type: "b", required: false, sample: false, default: true}
-# - { name: "CRM_LINE_CHANNEL_ACCESS_TOKEN", type: "s", required: false, sample: "", default: ""}
