@@ -1,23 +1,23 @@
 version: v1
 configs:
-# - { name: "CRM_PAYMENT_EGHL_SERVICE_ID", type: "s", required: true, sample: "[SERVICE_ID]" }
-# - { name: "CRM_PAYMENT_EGHL_PAYMENT_URL", type: "s", required: true, sample: "https://test2pay.ghl.com/ipgsg/payment.aspx", default: https://test2pay.ghl.com/ipgsg/payment.aspx }
-# - { name: "CRM_PAYMENT_EGHL_PASSWORD", type: "s", required: true, sample: "[UUID]" }
-# - { name: "CRM_PAYMENT_OMISE_PUBLIC_KEY", type: "s", required: true, sample: "[UUID]" }
-# - { name: "CRM_PAYMENT_OMISE_SECRET_KEY", type: "s", required: true, sample: "[UUID]" }
-# - { name: "CRM_VALIDATE_STOCK", type: "b", required: true, sample: "true", default: true }
-# - { name: "CRM_SEND_POINT_TO_EXTERNAL", type: "b", required: true, sample: "false", default: true }
-# - { name: "CRM_SEEDER_2C2P_IPP", type: "b", required: true, sample: "true", default: true }
-# - { name: "CRM_PRODUCT_IS_CALCULATE_POINT", type: "b", required: true, sample: "true", default: true }
-# - { name: "CRM_ENABLE_DISPLAY_RELATED_PRODUCT", type: "b", required: true, sample: "true", default: true }
-# - { name: "CRM_LANDING_VERIFIED_URL", type: "s", required: true, sample: "https://stg-ecom-bdb.pams.ai", default: "[REPLACE_ECOM_LANDING_VERIFIED_URL]" }
-# - { name: "CRM_IS_FLASHSALE_PRODUCT_ENABLED", type: "s", required: true, sample: "true", default: true }
-# - { name: "CRM_ORDER_CODE_TYPE", type: "s", required: true, sample: "INCREMENT_PERIOD_DAY", default: INCREMENT_PERIOD_MONTH }
-# - { name: "CRM_ORDER_PREFIX_CODE", type: "s", required: true, sample: "ONL", default: ORDER }
-# - { name: "CRM_ORDER_CODE_LENGTH", type: "n", required: true, sample: "14", default: 14 }
-# - { name: "CRM_ADDRESS_DATABASE_VERSION", type: "s", required: false, sample: "version2", default: version2 }
-# - { name: "CRM_PAYMENT_2C2P_MERCHANT_ID", type: "s", required: false, sample: "764111111111111" }
-# - { name: "CRM_PAYMENT_2C2P_SECRET_KEY", type: "s", required: false, sample: "V4SZ0C5OlxAq" }
+- { name: "CRM_PAYMENT_EGHL_SERVICE_ID", type: "s", required: true, sample: "[SERVICE_ID]" }
+- { name: "CRM_PAYMENT_EGHL_PAYMENT_URL", type: "s", required: true, sample: "https://test2pay.ghl.com/ipgsg/payment.aspx", default: https://test2pay.ghl.com/ipgsg/payment.aspx }
+- { name: "CRM_PAYMENT_EGHL_PASSWORD", type: "s", required: true, sample: "[UUID]" }
+- { name: "CRM_PAYMENT_OMISE_PUBLIC_KEY", type: "s", required: true, sample: "[UUID]" }
+- { name: "CRM_PAYMENT_OMISE_SECRET_KEY", type: "s", required: true, sample: "[UUID]" }
+- { name: "CRM_VALIDATE_STOCK", type: "b", required: true, sample: "true", default: true }
+- { name: "CRM_SEND_POINT_TO_EXTERNAL", type: "b", required: true, sample: "false", default: true }
+- { name: "CRM_SEEDER_2C2P_IPP", type: "b", required: true, sample: "true", default: true }
+- { name: "CRM_PRODUCT_IS_CALCULATE_POINT", type: "b", required: true, sample: "true", default: true }
+- { name: "CRM_ENABLE_DISPLAY_RELATED_PRODUCT", type: "b", required: true, sample: "true", default: true }
+- { name: "CRM_LANDING_VERIFIED_URL", type: "s", required: true, sample: "https://stg-ecom-bdb.pams.ai", default: "[REPLACE_ECOM_LANDING_VERIFIED_URL]" }
+- { name: "CRM_IS_FLASHSALE_PRODUCT_ENABLED", type: "s", required: true, sample: "true", default: true }
+- { name: "CRM_ORDER_CODE_TYPE", type: "s", required: true, sample: "INCREMENT_PERIOD_DAY", default: INCREMENT_PERIOD_MONTH }
+- { name: "CRM_ORDER_PREFIX_CODE", type: "s", required: true, sample: "ONL", default: ORDER }
+- { name: "CRM_ORDER_CODE_LENGTH", type: "n", required: true, sample: "14", default: 14 }
+- { name: "CRM_ADDRESS_DATABASE_VERSION", type: "s", required: false, sample: "version2", default: version2 }
+- { name: "CRM_PAYMENT_2C2P_MERCHANT_ID", type: "s", required: false, sample: "764111111111111" }
+- { name: "CRM_PAYMENT_2C2P_SECRET_KEY", type: "s", required: false, sample: "V4SZ0C5OlxAq" }
 # - { name: "CRM_PRODUCT_CREATE_EXCEL_COLUMN_HEADER", alias: "PRODUCT_CREATE_EXCEL_COLUMN_HEADER", type: "s", required: true, default: '[{"column_name":"Product Code","is_required":false,"field_name":"product_code"}]' }
 # - { name: "CRM_PRODUCT_UPDATE_EXCEL_COLUMN_HEADER", alias: "PRODUCT_UPDATE_EXCEL_COLUMN_HEADER", type: "s", required: true, default: '[{"column_name":"*Product ID (Do not change)","is_required":true,"field_name":"product_id"}]' }
 # - { name: "CRM_PRODUCT_SKU_EXCEL_COLUMN_HEADER", alias: "PRODUCT_SKU_EXCEL_COLUMN_HEADER", type: "s", required: true, default: '[{"column_name":"*Product ID (Do not change)","is_required":true,"field_name":"product_id"}]' }
