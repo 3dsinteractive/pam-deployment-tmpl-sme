@@ -28,55 +28,54 @@ configs:
 - { name: "CRM_PAYMENT_BBL_MERCHANT_API_ID", type: "s", required: false, sample: ""}
 - { name: "CRM_PAYMENT_BBL_MERCHANT_API_PASSWORD", type: "s", required: false, sample: ""}
 - { name: "CRM_PAYMENT_BBL_API_ENDPOINT", type: "s", required: false, sample: ""}
-# - { name: "CRM_ENABLE_IPP", type: "b", required: false, sample: "true", default: true }
-# - { name: "CRM_IS_ENABLE_VALIDATE_MEMBER_CLASS", type: "b", required: false, sample: "false", default: false}
-# - { name: "CRM_VALIDATE_MEMBER_CLASS_LIST", type: "s", required: false, sample: "ENJ,EPC"}
-# - { name: "CRM_PICKUP_STOCK_TYPE", type: "s", required: false, sample: "internal", default: internal }
-# - { name: "CRM_ENABLE_DELIVERY_STORE", type: "b", required: false, sample: "false", default: false }
-# - { name: "CRM_PAYMENT_KTC_MERCHANT_ID", type: "s", required: false, sample: ""}
-# - { name: "CRM_PAYMENT_KTC_IPP_MERCHANT_ID", type: "s", required: false, sample: "[MERCHANT_ID]"}
-# - { name: "CRM_PAYMENT_KTC_API_ENDPOINT", type: "s", required: false, sample: "https://testpaygate.ktc.co.th/ktc/eng/merchandize/payment/payForm.jsp"}
-# - { name: "CRM_KERRY_TRACKING_NO_PREFIX", type: "s", required: false, sample: "JMBS"}
-# - { name: "CRM_ENABLE_TRACKING_PER_STORE", type: "b", required: false, sample: "false" }
-# - { name: "CRM_NOT_SUPPORTED_SHIPPING_ZIPCODES", type: "s", required: false, sample: "95000,95110"}
-# - { name: "CRM_ENABLE_SUM_STORE_STOCK_BY_STORE_ID", type: "b", required: false, sample: "false", default: false }
-# - { name: "CRM_ENABLE_FIX_ECOM_MEMBER_POINTS_RATE", type: "b", required: false, sample: "false", default: true }
-# - { name: "CRM_MEMBER_POINTS_RATE", type: "n", required: false, default: "40.0" }
-# - { name: "CRM_ENABLE_MEMBER_TYPE_B2B_ONLY", type: "b", required: false, sample: "true" }
-# - { name: "CRM_ENABLE_MEMBER_TYPE_B2C", type: "b", required: false, sample: "true" }
-# - { name: "CRM_REQUEST_OTP_PERIOD_TIME_MINUTE", type: "n", required: false, sample: "3" }
-# - { name: "CRM_ENABLE_TRANSACTION_MEMBER_POINT", type: "b", required: false, sample: "true" }
-# - { name: "CRM_ENABLE_CAPTCHA_FEATURE", type: "b", required: false, sample: true, default: true }
-# - { name: "CRM_CAPTCHA_CONFIG", type: "s", required: false, sample: "", default: '{"ShowLineOptions":[],"CaptchaType":"string","Id":"","VerifyValue":"","DriverAudio":{"Length":6,"Language":"zh"},"DriverString":{"Height":60,"Width":240,"ShowLineOptions":0,"NoiseCount":0,"Source":"1234567890qwertyuioplkjhgfdsazxcvbnm","Length":6,"Fonts":["wqy-microhei.ttc"],"BgColor":{"R":0,"G":0,"B":0,"A":0}},"DriverMath":{"Height":60,"Width":240,"ShowLineOptions":0,"NoiseCount":0,"Length":6,"Fonts":["wqy-microhei.ttc"],"BgColor":{"R":0,"G":0,"B":0,"A":0}},"DriverChinese":{"Height":60,"Width":320,"ShowLineOptions":0,"NoiseCount":0,"Source":"设想,你在,处理,消费者,的音,频输,出音,频可,能无,论什,么都,没有,任何,输出,或者,它可,能是,单声道,立体声,或是,环绕立,体声的,,不想要,的值","Length":2,"Fonts":["wqy-microhei.ttc"],"BgColor":{"R":125,"G":125,"B":0,"A":118}},"DriverDigit":{"Height":80,"Width":240,"Length":5,"MaxSkew":0.7,"DotCount":80}}' }
-# - { name: "CRM_ORDER_INVOICE_CN_PREFIX_CODE", type: "s", required: false, sample: "MBCN", default: MBCN }
-# - { name: "CRM_ORDER_INVOICE_PREFIX_CODE", type: "s", required: false, sample: "MBIV", default: MBIV }
-# - { name: "CRM_FACEBOOK_APP_ID", type: "s", required: false, sample: ""}
-# - { name: "CRM_FACEBOOK_APP_SECRET", type: "s", required: false, sample: ""}
-# - { name: "CRM_ENABLE_PRICE_PROMOTION_IS_NULL", type: "b", required: false, sample: true, default: false}
-# - { name: "CRM_ENABLE_INCREMENT_MEMBER_CARD_NO_BY", type: "s", required: false, sample: "maria", default: "maria"}
-# - { name: "CRM_MEMBER_CARD_NO_LENGTH", type: "n", required: false, sample: "8", default: "8"}
-# - { name: "CRM_MEMBER_CARD_NO_PREFIX_CODE", type: "s", required: false, sample: "TNL", default: ""}
-# - { name: "CRM_ORDER_CHECK_DUMMY_MEMBER_CARD_NO", type: "s", required: false, sample: "DUMMY33333", default: ""}
-# - { name: "CRM_ENABLE_CHECK_DUMMY_MEMBER_CARD_NO", type: "b", required: false, sample: true, default: false}
-# - { name: "CRM_ENABLE_ORDER_EXTERNAL_CALCULATE_POINT", type: "b", required: false, sample: true, default: false}
-# - { name: "CRM_ENABLE_ORDER_EXTERNAL_MAPPING_BRAND", type: "b", required: false, sample: true, default: true}
-# - { name: "CRM_ENABLE_STOCK_VALIDATE_BOOKING", type: "b", required: false, sample: true, default: false}
-# - { name: "CRM_ENABLE_CONVERT_TRANSACTION_TYPE_TO_EARN_OR_BURN", type: "b", required: false, sample: true, default: false}
-# - { name: "CRM_ENABLE_ORDER_REQUIRE_TRANSACTION_TYPE", type: "b", required: false, sample: true, default: false}
-# - { name: "CRM_ENABLE_PRODUCT_CALUCULATE_TOPUP", type: "b", required: false, sample: true, default: false}
-# - { name: "CRM_SHIPPING_PROVIDER_ALIAS", type: "s", required: false, sample: "kerry", default: "kerry"}
-# - { name: "CRM_ENABLE_ORDER_INCREMENT_NUMBER_BY_ELS", type: "b", required: false, sample: true, default: false}
-# #- { name: "CRM_HOST", type: "s", required: false, sample: " https://xyz-ecom.pams.ai", default: ""}
-# - { name: "CRM_DISPLAY_NAME", type: "s", required: false, sample: "abc.com", default: ""}
-# - { name: "CRM_PAYMENT_KBANK_MERCHANT_ID", type: "s", required: false, sample: "123456", default: ""}
-# - { name: "CRM_PAYMENT_KBANK_IPP_MERCHANT_ID", type: "s", required: false, sample: "123456", default: ""}
-# - { name: "CRM_PAYMENT_KBANK_API_ENDPOINT", type: "s", required: false, sample: "https://dev-kpaymentgateway-services.kasikornbank.com/", default: ""}
-# - { name: "CRM_PAYMENT_KBANK_PUBLIC_KEY", type: "s", required: false, sample: "key-yyyyyyy", default: ""}
-# - { name: "CRM_PAYMENT_KBANK_PRIVATE_KEY", type: "s", required: false, sample: "key-xxxxxxx", default: ""}
-# - { name: "CRM_SEEDER_KBANK", type: "b", required: false, sample: true, default: false}
-# - { name: "CRM_SEEDER_KBANK_PROMPTPAY", type: "b", required: false, sample: true, default: false}
-# - { name: "CRM_SEEDER_KBANK_IPP", type: "b", required: false, sample: true, default: false}
-# - { name: "CRM_MEMBER_CARD_NO_INCREMENT_BY", type: "s", required: false, sample: "maria", default: "maria"}
+- { name: "CRM_ENABLE_IPP", type: "b", required: false, sample: "true", default: true }
+- { name: "CRM_IS_ENABLE_VALIDATE_MEMBER_CLASS", type: "b", required: false, sample: "false", default: false}
+- { name: "CRM_VALIDATE_MEMBER_CLASS_LIST", type: "s", required: false, sample: "ENJ,EPC"}
+- { name: "CRM_PICKUP_STOCK_TYPE", type: "s", required: false, sample: "internal", default: internal }
+- { name: "CRM_ENABLE_DELIVERY_STORE", type: "b", required: false, sample: "false", default: false }
+- { name: "CRM_PAYMENT_KTC_MERCHANT_ID", type: "s", required: false, sample: ""}
+- { name: "CRM_PAYMENT_KTC_IPP_MERCHANT_ID", type: "s", required: false, sample: "[MERCHANT_ID]"}
+- { name: "CRM_PAYMENT_KTC_API_ENDPOINT", type: "s", required: false, sample: "https://testpaygate.ktc.co.th/ktc/eng/merchandize/payment/payForm.jsp"}
+- { name: "CRM_KERRY_TRACKING_NO_PREFIX", type: "s", required: false, sample: "JMBS"}
+- { name: "CRM_ENABLE_TRACKING_PER_STORE", type: "b", required: false, sample: "false" }
+- { name: "CRM_NOT_SUPPORTED_SHIPPING_ZIPCODES", type: "s", required: false, sample: "95000,95110"}
+- { name: "CRM_ENABLE_SUM_STORE_STOCK_BY_STORE_ID", type: "b", required: false, sample: "false", default: false }
+- { name: "CRM_ENABLE_FIX_ECOM_MEMBER_POINTS_RATE", type: "b", required: false, sample: "false", default: true }
+- { name: "CRM_MEMBER_POINTS_RATE", type: "n", required: false, default: "40.0" }
+- { name: "CRM_ENABLE_MEMBER_TYPE_B2B_ONLY", type: "b", required: false, sample: "true" }
+- { name: "CRM_ENABLE_MEMBER_TYPE_B2C", type: "b", required: false, sample: "true" }
+- { name: "CRM_REQUEST_OTP_PERIOD_TIME_MINUTE", type: "n", required: false, sample: "3" }
+- { name: "CRM_ENABLE_TRANSACTION_MEMBER_POINT", type: "b", required: false, sample: "true" }
+- { name: "CRM_ENABLE_CAPTCHA_FEATURE", type: "b", required: false, sample: true, default: true }
+- { name: "CRM_CAPTCHA_CONFIG", type: "s", required: false, sample: "", default: '{"ShowLineOptions":[],"CaptchaType":"string","Id":"","VerifyValue":"","DriverAudio":{"Length":6,"Language":"zh"},"DriverString":{"Height":60,"Width":240,"ShowLineOptions":0,"NoiseCount":0,"Source":"1234567890qwertyuioplkjhgfdsazxcvbnm","Length":6,"Fonts":["wqy-microhei.ttc"],"BgColor":{"R":0,"G":0,"B":0,"A":0}},"DriverMath":{"Height":60,"Width":240,"ShowLineOptions":0,"NoiseCount":0,"Length":6,"Fonts":["wqy-microhei.ttc"],"BgColor":{"R":0,"G":0,"B":0,"A":0}},"DriverChinese":{"Height":60,"Width":320,"ShowLineOptions":0,"NoiseCount":0,"Source":"设想,你在,处理,消费者,的音,频输,出音,频可,能无,论什,么都,没有,任何,输出,或者,它可,能是,单声道,立体声,或是,环绕立,体声的,,不想要,的值","Length":2,"Fonts":["wqy-microhei.ttc"],"BgColor":{"R":125,"G":125,"B":0,"A":118}},"DriverDigit":{"Height":80,"Width":240,"Length":5,"MaxSkew":0.7,"DotCount":80}}' }
+- { name: "CRM_ORDER_INVOICE_CN_PREFIX_CODE", type: "s", required: false, sample: "MBCN", default: MBCN }
+- { name: "CRM_ORDER_INVOICE_PREFIX_CODE", type: "s", required: false, sample: "MBIV", default: MBIV }
+- { name: "CRM_FACEBOOK_APP_ID", type: "s", required: false, sample: ""}
+- { name: "CRM_FACEBOOK_APP_SECRET", type: "s", required: false, sample: ""}
+- { name: "CRM_ENABLE_PRICE_PROMOTION_IS_NULL", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_ENABLE_INCREMENT_MEMBER_CARD_NO_BY", type: "s", required: false, sample: "maria", default: "maria"}
+- { name: "CRM_MEMBER_CARD_NO_LENGTH", type: "n", required: false, sample: "8", default: "8"}
+- { name: "CRM_MEMBER_CARD_NO_PREFIX_CODE", type: "s", required: false, sample: "TNL", default: ""}
+- { name: "CRM_ORDER_CHECK_DUMMY_MEMBER_CARD_NO", type: "s", required: false, sample: "DUMMY33333", default: ""}
+- { name: "CRM_ENABLE_CHECK_DUMMY_MEMBER_CARD_NO", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_ENABLE_ORDER_EXTERNAL_CALCULATE_POINT", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_ENABLE_ORDER_EXTERNAL_MAPPING_BRAND", type: "b", required: false, sample: true, default: true}
+- { name: "CRM_ENABLE_STOCK_VALIDATE_BOOKING", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_ENABLE_CONVERT_TRANSACTION_TYPE_TO_EARN_OR_BURN", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_ENABLE_ORDER_REQUIRE_TRANSACTION_TYPE", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_ENABLE_PRODUCT_CALUCULATE_TOPUP", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_SHIPPING_PROVIDER_ALIAS", type: "s", required: false, sample: "kerry", default: "kerry"}
+- { name: "CRM_ENABLE_ORDER_INCREMENT_NUMBER_BY_ELS", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_DISPLAY_NAME", type: "s", required: false, sample: "abc.com", default: ""}
+- { name: "CRM_PAYMENT_KBANK_MERCHANT_ID", type: "s", required: false, sample: "123456", default: ""}
+- { name: "CRM_PAYMENT_KBANK_IPP_MERCHANT_ID", type: "s", required: false, sample: "123456", default: ""}
+- { name: "CRM_PAYMENT_KBANK_API_ENDPOINT", type: "s", required: false, sample: "https://dev-kpaymentgateway-services.kasikornbank.com/", default: ""}
+- { name: "CRM_PAYMENT_KBANK_PUBLIC_KEY", type: "s", required: false, sample: "key-yyyyyyy", default: ""}
+- { name: "CRM_PAYMENT_KBANK_PRIVATE_KEY", type: "s", required: false, sample: "key-xxxxxxx", default: ""}
+- { name: "CRM_SEEDER_KBANK", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_SEEDER_KBANK_PROMPTPAY", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_SEEDER_KBANK_IPP", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_MEMBER_CARD_NO_INCREMENT_BY", type: "s", required: false, sample: "maria", default: "maria"}
 - { name: "CRM_ORDER_INVOICE_LENGTH", type: "n", required: false, sample: "", default: 11}
 - { name: "CRM_ORDER_INVOICE_CN_LENGTH", type: "n", required: false, sample: "", default: 11}
 - { name: "CRM_ORDER_STATUS_CANCEL_ID", type: "s", required: false, sample: "7", default: ""}
