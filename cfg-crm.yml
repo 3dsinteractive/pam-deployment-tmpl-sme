@@ -1,5 +1,6 @@
 version: v1
 configs:
+- { name: "CRM_AUTHENTICATION", type: "b", required: true, sample: true, default: true }
 - { name: "CRM_PAYMENT_EGHL_SERVICE_ID", type: "s", required: true, sample: "[SERVICE_ID]" }
 - { name: "CRM_PAYMENT_EGHL_PAYMENT_URL", type: "s", required: true, sample: "https://test2pay.ghl.com/ipgsg/payment.aspx", default: https://test2pay.ghl.com/ipgsg/payment.aspx }
 - { name: "CRM_PAYMENT_EGHL_PASSWORD", type: "s", required: true, sample: "[UUID]" }
