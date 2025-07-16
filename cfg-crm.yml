@@ -118,25 +118,25 @@ configs:
 # - { name: "CRM_ENABLE_VALIDATE_PASSWORD_SPECIAL_CHAR", type: "b", required: false, sample: false, default: false}
 # - { name: "CRM_ENABLE_LOGIN_WITH_CONTACT_EMAIL", type: "b", required: false, sample: false, default: false}
 # - { name: "CRM_RELATED_PRODUCT_SAME_GROUP", type: "b", required: false, sample: true, default: true}
-# - { name: "CRM_RELATED_PRODUCT_MORE", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_RELATED_PRODUCT_TYPE", type: "s", required: false, sample: "brand", default: ""}
-# - { name: "CRM_RELATED_PRODUCT_DISPLAY_LIMIT", type: "n", required: false, sample: 10, default: 10}
-# - { name: "CRM_ENABLE_SEND_EVENT_UPDATE_MEMBER_CLASS", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ENABLE_SEND_EVENT_DIRECTION_MEMBER_CLASS", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ENABLE_PARAM_BACKEND_REQUIRED_SEO_URL", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ENABLE_EXTERNAL_WHITE_LIST_IP", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_EXTERNAL_WHITE_LIST_IP", type: "s", required: false, sample: "", default: ""}
-# - { name: "CRM_ENABLE_IGNORE_FILTER_MEMBER_CARD_NO_FOR_THE_BRAIN_MEMBER_DETAIL", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ENABLE_SEND_CREATE_OR_UPDATE_CUSTOMER_EXTERNAL", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ENABLE_SEND_ORDER_CANCEL_EXTERNAL", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ATTRIBUTE_USE_FOR_CUSTOMER_KEY", type: "s", required: false, sample: "member_id", default: "member_id"}
-# - { name: "CRM_MQ_PRODUCT_UPDATE_PRICE_PARTITIONS", type: "n", required: false, sample: "50" }
-# - { name: "CRM_MQ_PRODUCT_UPDATE_PRICE_REPLICAS", type: "n", required: false, sample: "2" }
-# - { name: "CRM_THIRD_PARTY_PERSISTER_ENDPOINT", type: "s", required: false, sample: maria-connect }
-# - { name: "CRM_THIRD_PARTY_PERSISTER_PORT", type: "n", required: false, sample: 3306 }
-# - { name: "CRM_THIRD_PARTY_PERSISTER_DB", type: "s", required: false, sample: my_database }
-# - { name: "CRM_THIRD_PARTY_PERSISTER_USERNAME", type: "s", required: false, sample: my_user }
-# - { name: "CRM_THIRD_PARTY_PERSISTER_PASSWORD", type: "s", required: false, sample: "UUID" }
+- { name: "CRM_RELATED_PRODUCT_MORE", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_RELATED_PRODUCT_TYPE", type: "s", required: false, sample: "brand", default: ""}
+- { name: "CRM_RELATED_PRODUCT_DISPLAY_LIMIT", type: "n", required: false, sample: 10, default: 10}
+- { name: "CRM_ENABLE_SEND_EVENT_UPDATE_MEMBER_CLASS", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ENABLE_SEND_EVENT_DIRECTION_MEMBER_CLASS", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ENABLE_PARAM_BACKEND_REQUIRED_SEO_URL", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ENABLE_EXTERNAL_WHITE_LIST_IP", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_EXTERNAL_WHITE_LIST_IP", type: "s", required: false, sample: "", default: ""}
+- { name: "CRM_ENABLE_IGNORE_FILTER_MEMBER_CARD_NO_FOR_THE_BRAIN_MEMBER_DETAIL", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ENABLE_SEND_CREATE_OR_UPDATE_CUSTOMER_EXTERNAL", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ENABLE_SEND_ORDER_CANCEL_EXTERNAL", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ATTRIBUTE_USE_FOR_CUSTOMER_KEY", type: "s", required: false, sample: "member_id", default: "member_id"}
+- { name: "CRM_MQ_PRODUCT_UPDATE_PRICE_PARTITIONS", type: "n", required: false, sample: "50" }
+- { name: "CRM_MQ_PRODUCT_UPDATE_PRICE_REPLICAS", type: "n", required: false, sample: "2" }
+- { name: "CRM_THIRD_PARTY_PERSISTER_ENDPOINT", type: "s", required: false, sample: maria-connect }
+- { name: "CRM_THIRD_PARTY_PERSISTER_PORT", type: "n", required: false, sample: 3306 }
+- { name: "CRM_THIRD_PARTY_PERSISTER_DB", type: "s", required: false, sample: my_database }
+- { name: "CRM_THIRD_PARTY_PERSISTER_USERNAME", type: "s", required: false, sample: my_user }
+- { name: "CRM_THIRD_PARTY_PERSISTER_PASSWORD", type: "s", required: false, sample: "UUID" }
 - { name: "CRM_THIRD_PARTY_PERSISTER_CHARSET", type: "s", required: false, sample: utf8mb4 }
 - { name: "CRM_ENABLE_UPDATE_STOCK_EXTERNAL", type: "b", required: false, sample: false, default: false}
 - { name: "CRM_ATTEMPT_REPEAT_CALL_API", type: "n", required: false, sample: 3, default: 1}
