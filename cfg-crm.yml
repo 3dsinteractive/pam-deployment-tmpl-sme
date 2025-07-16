@@ -97,27 +97,27 @@ configs:
 # - { name: "CRM_ENABLE_PARAM_TRANSACTION_OPTIONAL_WITH_CONDITION", type: "b", required: false, sample: false, default: false}
 # - { name: "CRM_DEFAULT_ECOMMERCE_TYPE", type: "s", required: false, sample: "", default: "app-ecommerce"}
 # - { name: "CRM_ENABLE_FIX_TRANSACTION_MEMBER_POINT_EXPIRED_DATE", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ENABLE_TRANSACTION_BIRTHDATE_POINT", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_OTP_NUMBER_ATTEMPTS", type: "n", required: false, sample: 5, default: 5}
-# - { name: "CRM_ENABLE_VALIDATE_PASSWORD_FORMAT", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ASYNC_RATE_LIMIT_BY_IP_PER_MIN", type: "n", required: false, sample: 10, default: 10}
-# - { name: "CRM_PAYMENT_KBANK_PROMPT_PAY_MERCHANT_ID", type: "s", required: false, sample: "", default: ""}
-# - { name: "CRM_PAYMENT_KBANK_PROMPT_PAY_TERMINAL_ID", type: "s", required: false, sample: "", default: ""}
-# - { name: "CRM_CMS_FRONTEND_URL", type: "s", required: false, sample: "https://stgx-ecom-cms.pams.ai", default: "[REPLACE_ECOM_CMS_FRONTEND_URL]" }
-# - { name: "CRM_TRANSACTION_POINT_EXPIRED_IN_TIME_DAY", type: "n", required: false, sample: 14, default: 14}
-# - { name: "CRM_ENABLE_VOUCHER_TYPE_GIFT_VOUCHER", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_DROP_LEAD_VOUCHER_TRACKING_CONSENT_ID", type: "s", required: false, sample: "", default: ""}
-# - { name: "CRM_DROP_LEAD_VOUCHER_CONTACTING_CONSENT_ID", type: "s", required: false, sample: "", default: ""}
-# - { name: "CRM_DROP_LEAD_VOUCHER_DATABASE", type: "s", required: false, sample: "", default: ""}
-# - { name: "CRM_DROP_LEAD_VOUCHER_LINE_CAMPAIGN_ID", type: "s", required: false, sample: "", default: ""}
-# - { name: "CRM_DROP_LEAD_VOUCHER_SMS_CAMPAIGN_ID", type: "s", required: false, sample: "", default: ""}
-# - { name: "CRM_DROP_LEAD_VOUCHER_EMAIL_CAMPAIGN_ID", type: "s", required: false, sample: "", default: ""}
-# - { name: "CRM_OTP_VALIDATE_EXIST_MEMBER", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_STORE_CODES_TYPE_DELIVERY", type: "s", required: false, sample: "1702", default: ""}
-# - { name: "CRM_ENABLE_ORDER_STORE_PERMISSION", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ENABLE_VALIDATE_PASSWORD_SPECIAL_CHAR", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_ENABLE_LOGIN_WITH_CONTACT_EMAIL", type: "b", required: false, sample: false, default: false}
-# - { name: "CRM_RELATED_PRODUCT_SAME_GROUP", type: "b", required: false, sample: true, default: true}
+- { name: "CRM_ENABLE_TRANSACTION_BIRTHDATE_POINT", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_OTP_NUMBER_ATTEMPTS", type: "n", required: false, sample: 5, default: 5}
+- { name: "CRM_ENABLE_VALIDATE_PASSWORD_FORMAT", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ASYNC_RATE_LIMIT_BY_IP_PER_MIN", type: "n", required: false, sample: 10, default: 10}
+- { name: "CRM_PAYMENT_KBANK_PROMPT_PAY_MERCHANT_ID", type: "s", required: false, sample: "", default: ""}
+- { name: "CRM_PAYMENT_KBANK_PROMPT_PAY_TERMINAL_ID", type: "s", required: false, sample: "", default: ""}
+- { name: "CRM_CMS_FRONTEND_URL", type: "s", required: false, sample: "https://stgx-ecom-cms.pams.ai", default: "[REPLACE_ECOM_CMS_FRONTEND_URL]" }
+- { name: "CRM_TRANSACTION_POINT_EXPIRED_IN_TIME_DAY", type: "n", required: false, sample: 14, default: 14}
+- { name: "CRM_ENABLE_VOUCHER_TYPE_GIFT_VOUCHER", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_DROP_LEAD_VOUCHER_TRACKING_CONSENT_ID", type: "s", required: false, sample: "", default: ""}
+- { name: "CRM_DROP_LEAD_VOUCHER_CONTACTING_CONSENT_ID", type: "s", required: false, sample: "", default: ""}
+- { name: "CRM_DROP_LEAD_VOUCHER_DATABASE", type: "s", required: false, sample: "", default: ""}
+- { name: "CRM_DROP_LEAD_VOUCHER_LINE_CAMPAIGN_ID", type: "s", required: false, sample: "", default: ""}
+- { name: "CRM_DROP_LEAD_VOUCHER_SMS_CAMPAIGN_ID", type: "s", required: false, sample: "", default: ""}
+- { name: "CRM_DROP_LEAD_VOUCHER_EMAIL_CAMPAIGN_ID", type: "s", required: false, sample: "", default: ""}
+- { name: "CRM_OTP_VALIDATE_EXIST_MEMBER", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_STORE_CODES_TYPE_DELIVERY", type: "s", required: false, sample: "1702", default: ""}
+- { name: "CRM_ENABLE_ORDER_STORE_PERMISSION", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ENABLE_VALIDATE_PASSWORD_SPECIAL_CHAR", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_ENABLE_LOGIN_WITH_CONTACT_EMAIL", type: "b", required: false, sample: false, default: false}
+- { name: "CRM_RELATED_PRODUCT_SAME_GROUP", type: "b", required: false, sample: true, default: true}
 - { name: "CRM_RELATED_PRODUCT_MORE", type: "b", required: false, sample: false, default: false}
 - { name: "CRM_RELATED_PRODUCT_TYPE", type: "s", required: false, sample: "brand", default: ""}
 - { name: "CRM_RELATED_PRODUCT_DISPLAY_LIMIT", type: "n", required: false, sample: 10, default: 10}
