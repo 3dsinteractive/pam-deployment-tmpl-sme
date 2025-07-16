@@ -28,16 +28,16 @@ configs:
 - { name: "CRM_PAYMENT_BBL_MERCHANT_API_ID", type: "s", required: false, sample: ""}
 - { name: "CRM_PAYMENT_BBL_MERCHANT_API_PASSWORD", type: "s", required: false, sample: ""}
 - { name: "CRM_PAYMENT_BBL_API_ENDPOINT", type: "s", required: false, sample: ""}
-- { name: "CRM_ENABLE_IPP", type: "b", required: false, sample: "true", default: true }
-- { name: "CRM_IS_ENABLE_VALIDATE_MEMBER_CLASS", type: "b", required: false, sample: "false", default: false}
-- { name: "CRM_VALIDATE_MEMBER_CLASS_LIST", type: "s", required: false, sample: "ENJ,EPC"}
-- { name: "CRM_PICKUP_STOCK_TYPE", type: "s", required: false, sample: "internal", default: internal }
-- { name: "CRM_ENABLE_DELIVERY_STORE", type: "b", required: false, sample: "false", default: false }
-- { name: "CRM_PAYMENT_KTC_MERCHANT_ID", type: "s", required: false, sample: ""}
-- { name: "CRM_PAYMENT_KTC_IPP_MERCHANT_ID", type: "s", required: false, sample: "[MERCHANT_ID]"}
-- { name: "CRM_PAYMENT_KTC_API_ENDPOINT", type: "s", required: false, sample: "https://testpaygate.ktc.co.th/ktc/eng/merchandize/payment/payForm.jsp"}
-- { name: "CRM_KERRY_TRACKING_NO_PREFIX", type: "s", required: false, sample: "JMBS"}
-- { name: "CRM_ENABLE_TRACKING_PER_STORE", type: "b", required: false, sample: "false" }
+# - { name: "CRM_ENABLE_IPP", type: "b", required: false, sample: "true", default: true }
+# - { name: "CRM_IS_ENABLE_VALIDATE_MEMBER_CLASS", type: "b", required: false, sample: "false", default: false}
+# - { name: "CRM_VALIDATE_MEMBER_CLASS_LIST", type: "s", required: false, sample: "ENJ,EPC"}
+# - { name: "CRM_PICKUP_STOCK_TYPE", type: "s", required: false, sample: "internal", default: internal }
+# - { name: "CRM_ENABLE_DELIVERY_STORE", type: "b", required: false, sample: "false", default: false }
+# - { name: "CRM_PAYMENT_KTC_MERCHANT_ID", type: "s", required: false, sample: ""}
+# - { name: "CRM_PAYMENT_KTC_IPP_MERCHANT_ID", type: "s", required: false, sample: "[MERCHANT_ID]"}
+# - { name: "CRM_PAYMENT_KTC_API_ENDPOINT", type: "s", required: false, sample: "https://testpaygate.ktc.co.th/ktc/eng/merchandize/payment/payForm.jsp"}
+# - { name: "CRM_KERRY_TRACKING_NO_PREFIX", type: "s", required: false, sample: "JMBS"}
+# - { name: "CRM_ENABLE_TRACKING_PER_STORE", type: "b", required: false, sample: "false" }
 # - { name: "CRM_NOT_SUPPORTED_SHIPPING_ZIPCODES", type: "s", required: false, sample: "95000,95110"}
 # - { name: "CRM_ENABLE_SUM_STORE_STOCK_BY_STORE_ID", type: "b", required: false, sample: "false", default: false }
 # - { name: "CRM_ENABLE_FIX_ECOM_MEMBER_POINTS_RATE", type: "b", required: false, sample: "false", default: true }
