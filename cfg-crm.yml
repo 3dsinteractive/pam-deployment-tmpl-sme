@@ -161,3 +161,4 @@ configs:
 - { name: "CRM_ENABLE_MULTIPLE_LINE_PROVIDER", type: "b", required: false, sample: false, default: false}
 - { name: "CRM_LINE_CHANNEL_ACCESS_TOKEN", type: "s", required: false, sample: "", default: ""}
 - { name: "CRM_ENABLE_MEMBER_TIER_UPGRADE", type: "b", required: false, sample: false, default: true}
+- { name: "CRM_IGNOREGEN_MEMBER_CARD_NO", type: "b", required: false, sample: "false", default: true }
