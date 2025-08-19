@@ -168,3 +168,8 @@ configs:
 - { name: "CRM_ENABLE_VOUCHER_LIMIT_PER_MONTH", type: "b", required: false, sample: false, default: false}
 - { name: "CRM_TRANSACTION_TITLE_PRODUCT_SCAN_CONTEXT_TH", type: "s", required: false, sample: "" }
 - { name: "CRM_TRANSACTION_TITLE_PRODUCT_SCAN_CONTEXT_EN", type: "s", required: false, sample: "" }
+- { name: "CRM_FRONT_HOST", type: "s", required: false, sample: "https://stgx-crm.pams.ai", default: ""}
+- { name: "CRM_HOST", type: "s", required: false, sample: "https://stgx-crm-api.pams.ai", default: ""}
+- { name: "CRM_PRODUCT_SCAN_LANDING_PAGE_ID", type: "s", required: false, sample: "", default: ""}
+- { name: "CRM_ENABLE_CONTENT_READ", type: "b", required: false, sample: true, default: false}
+- { name: "CRM_RESOLVE_AFFILIATE_KEY_NAME", type: "s", required: false, sample: "", default: ""}
