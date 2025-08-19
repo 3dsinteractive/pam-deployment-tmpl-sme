@@ -163,3 +163,4 @@ configs:
 - { name: "CRM_ENABLE_MEMBER_TIER_UPGRADE", type: "b", required: false, sample: false, default: true}
 - { name: "CRM_IGNOREGEN_MEMBER_CARD_NO", type: "b", required: false, sample: "false", default: true }
 - { name: "CRM_ENABLE_USE_MEMBER_CARD_NO_FROM_OLDMEMBER", type: "b", required: false, sample: "false", default: false }
+- { name: "CRM_SCAN_API_ENDPOINT", type: "s", required: false, sample: ""}
