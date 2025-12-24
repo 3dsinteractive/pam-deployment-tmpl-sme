@@ -22,7 +22,7 @@ spec:
         role: worker
       containers:
         - name: <name>
-          image: 3dsinteractive/pam4-migrate:<tag>.<timestamp>
+          image: 3dsinteractive/pam-migrate-ai:<tag>.<timestamp>
           imagePullPolicy: Always
           env: [ {name: PAM4_ENV, value: prod}, {name: DEBUG, value: "true"} <envs>]
           readinessProbe:
