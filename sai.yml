@@ -23,7 +23,7 @@ spec:
       imagePullSecrets:
       - name: dockerlogin
       nodeSelector:
-        env: c1
+        env: <clientId>
         role: worker
       priorityClassName: class-static
       containers:
