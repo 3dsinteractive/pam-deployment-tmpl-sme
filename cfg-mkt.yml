@@ -215,3 +215,8 @@ configs:
 - { name: "PAM_CHAT_CASES_CLOSED_IN_MINUTE", type: "n", required: false, sample: 60, default: 60 }
 - { name: "PAM_CHAT_LOGIN_ACCESS_TOKEN_EXPIRE_TIME", type: "n", required: false, sample: 3600, default: 0 }
 - { name: "PAM_CHAT_LOGIN_REFRESH_TOKEN_EXPIRE_TIME", type: "n", required: false, sample: 2592000, default: 0 }
+- { name: "GOOGLE_SERVICE_ACCOUNT_EMAIL", type: "s", alias: "GOOGLE_SERVICE_ACCOUNT_EMAIL", required: false, sample: "private_vapid_push", default: "DEFAULT_VAPID_PUBLIC_KEY" }
+- { name: "GOOGLE_PRIVATE_KEY", type: "s", alias: "GOOGLE_PRIVATE_KEY", required: false, sample: "private_vapid_push", default: "DEFAULT_VAPID_PUBLIC_KEY" }
+- { name: "GOOGLE_SPREADSHEET_ID", type: "s", alias: "GOOGLE_SPREADSHEET_ID", required: false, sample: "spreadsheet_id", default: "DEFAULT_SPREADSHEET_ID" }
+- { name: "MANAGEMENT_USER", type: "s", alias: "MANAGEMENT_USER", required: false, sample: "management_user", default: "DEFAULT_MANAGEMENT_USER" }
+- { name: "MANAGEMENT_PASSWORD", type: "s", alias: "MANAGEMENT_PASSWORD", required: false, sample: "management_password", default: "DEFAULT_MANAGEMENT_PASSWORD" }
