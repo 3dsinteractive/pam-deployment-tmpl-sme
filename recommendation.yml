@@ -1,0 +1,81 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <name>
+  namespace: <namespace>
+  labels:
+    name: <name>
+spec:
+  replicas: <replicas>
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      name: <name>
+  template:
+    metadata:
+      labels:
+        name: <name>
+    spec:
+      terminationGracePeriodSeconds: 30
+      imagePullSecrets:
+      - name: dockerlogin
+      nodeSelector:
+        env: <clientId>
+        role: worker
+      priorityClassName: class-static
+      containers:
+      - name: <name>
+        image: <image>
+        imagePullPolicy: IfNotPresent
+        startupProbe:
+          httpGet:
+            path: /health
+            port: 8112
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 60
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8112
+          periodSeconds: 10
+          timeoutSeconds: 5
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8112
+          periodSeconds: 30
+          timeoutSeconds: 5
+          failureThreshold: 3
+        envFrom:
+        - secretRef:
+            name: recommendation-env
+            optional: true
+        env: [ {name: PAM4_ENV, value: <env>} <envs>]
+        ports:
+        - name: http
+          containerPort: 8112
+        resources:
+          requests:
+            memory: <minMem>
+            cpu: <minCpu>
+          limits:
+            memory: <maxMem>
+            cpu: <maxCpu>
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: <name>
+  namespace: <namespace>
+  labels:
+    name: <name>
+spec:
+  ports:
+  - port: 8112
+    name: http
+    targetPort: 8112
+    protocol: TCP
+  selector:
+    name: <name>
